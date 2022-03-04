@@ -5,7 +5,15 @@ de Gestão (SEGES) do Ministério da Economia.
 
 ## Programação
 
-...
+| Quem | O quê | Quando |
+|---|---|---|
+| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:00 |
+| Cleiton ou Anne | Compras.gov.br Contratos e o dataset disponível | 14:20 |
+| Luís Izycki | TaxiGov e o dataset disponível | 14:40 |
+| Jorge Ubirajara | Análise de dados do TaxiGov | 15:00 |
+| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:20 |
+
+Sujeita a alteração a qualquer momento até o horário do evento.
 
 ## Conjuntos de dados utilizados
 
