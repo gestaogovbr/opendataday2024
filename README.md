@@ -3,6 +3,8 @@
 No sábado, 5 de março de 2022, será o Open Data Day 2022 da Secretaria
 de Gestão (SEGES) do Ministério da Economia.
 
+![OPEN DATASETS SEGES](public/assets/images/open-datasets-seges.png)
+
 ## Programação
 
 | Quem | O quê | Quando |
