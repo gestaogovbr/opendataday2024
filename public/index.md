@@ -39,6 +39,11 @@ No evento vamos apresentar e utilizar alguns conjuntos de dados da SEGES:
 Para participar das oficinas, sugerimos preparar o seu ambiente de
 análise de dados e baixar os conjuntos de dados.
 
+Utilizaremos o ambiente do Jupyter Lab que está
+[neste repositório](https://github.com/augusto-herrmann/docker-jupyter-extensible).
+Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
+dependências que vamos utilizar, tornando tudo mais fácil.
+
 ## Como participar
 
 Não há inscrição. É só chegar e participar! Pouco antes do horário
