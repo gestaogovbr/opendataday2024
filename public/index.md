@@ -9,6 +9,8 @@ celebrar os dados abertos. Para saber mais sobre os eventos passados do
 Open Data Day no Brasil,
 [veja este texto](https://herrmann.tech/pt/blog/2022/02/23/open-data-day-2022-esta-chegando-conheca-os-anteriores-no-brasil.html).
 
+![OPEN DATA SETS SEGES]({{ 'assets/images/open-datasets-seges.png' | relative_url }})
+
 Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Economia vai
 apresentar e mostrar como usar os dados abertos que disponibiliza.
 
