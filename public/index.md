@@ -47,4 +47,5 @@ dependências que vamos utilizar, tornando tudo mais fácil.
 ## Como participar
 
 Não há inscrição. É só chegar e participar! Pouco antes do horário
-previsto, esta página será atualizada com o link para participação.
+previsto, esta página será atualizada com os links para assistir a
+transmissão e participar.
