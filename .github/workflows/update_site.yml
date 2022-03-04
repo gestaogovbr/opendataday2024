@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-20.04
     name: Update site on Github Pages
     steps:
-    - uses: actions/checkout@v2
-    - name: Deploy
+      - uses: actions/checkout@v2
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
