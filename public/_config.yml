@@ -1,8 +1,10 @@
 title: "Open Data Day SEGES 2022"
 description: Conheça os dados abertos da Secretaria de Gestão
+markdown: CommonMarkGhPages
+commonmark:
+  extensions: ["table"]
 remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
   - jekyll-remote-theme
-  - jekyll-spaceship
 theme: jekyll-theme-leap-day
 show_downloads: false
