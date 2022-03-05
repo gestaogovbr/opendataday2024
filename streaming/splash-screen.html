@@ -1,0 +1,52 @@
+<html lang="pt_BR">
+    <head>
+        <title>Carregando... Open Data { SETS | SEGES }</title>
+        <style type="text/css">
+            @keyframes grad-anim {
+                0%{background-position: 0% 0%;}
+                100%{background-position: 105% 105%;}
+            }
+            body {
+                background: linear-gradient(
+                    30deg,
+                    darkblue 0%,
+                    darkslateblue 20%,
+                    darkslateblue 30%,
+                    darkblue 50%,
+                    darkslateblue 70%,
+                    darkslateblue 80%,
+                    darkblue 100%);
+                background-size: 100% 1100%;
+                background-repeat: repeat;
+                height: 200vh;
+                width: 100vw;
+                overflow: hidden;
+                animation: grad-anim 10s linear infinite;
+            }
+            main p {
+                color: white;
+                font-family: sans-serif;
+            }
+            .center-screen {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="center-screen">
+            <div>
+                <img src="../public/assets/images/open-datasets-seges.png">
+            </div>
+            <p><strong>5 de março de 2022</strong></p>
+            <div>
+                <img src="qr-code-site.png">
+            </div>
+            <p>O evento já vai começar...</p>
+        </main>
+    </body>
+</html>
