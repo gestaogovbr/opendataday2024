@@ -18,11 +18,12 @@ apresentar e mostrar como usar os dados abertos que disponibiliza.
 
 | Quem | O quê | Quando |
 |---|---|---|
-| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:00 |
-| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:20 |
-| Luís Izycki | TaxiGov e o dataset disponível | 14:40 |
-| Jorge Ubirajara | Análise de dados do TaxiGov | 15:00 |
-| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:20 |
+| Augusto Herrmann | Abertura | 14:00 |
+| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:10 |
+| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:30 |
+| Luís Izycki | TaxiGov e o dataset disponível | 14:50 |
+| Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 |
+| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 |
 
 Sujeita a alteração a qualquer momento até o horário do evento.
 
@@ -48,8 +49,6 @@ dependências que vamos utilizar, tornando tudo mais fácil.
 
 Não há inscrição. É só chegar e participar! Para assistir, basta
 reproduzir o vídeo abaixo.
-
-<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://tube.nocturlab.fr/videos/embed/59903907-8a90-45dc-904d-3e651a2ebe09" frameborder="0" allowfullscreen></iframe>
 
 Se preferir, pode também abrir
 [a página do vídeo](https://tube.nocturlab.fr/videos/watch/59903907-8a90-45dc-904d-3e651a2ebe09)
