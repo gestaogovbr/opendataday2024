@@ -46,6 +46,6 @@ dependências que vamos utilizar, tornando tudo mais fácil.
 
 ## Como participar
 
-Não há inscrição. É só chegar e participar! Pouco antes do horário
-previsto, esta página será atualizada com os links para assistir a
-transmissão e participar.
+Não há inscrição. É só chegar e participar! Para assistir,
+[acesse este link](https://tube.nocturlab.fr/videos/watch/59903907-8a90-45dc-904d-3e651a2ebe09).
+Comentários e perguntas podem ser enviados pela página do vídeo.
