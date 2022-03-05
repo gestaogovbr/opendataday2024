@@ -19,7 +19,7 @@ apresentar e mostrar como usar os dados abertos que disponibiliza.
 | Quem | O quê | Quando |
 |---|---|---|
 | Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:00 |
-| Anne Knoll e Cleiton Pontes | Compras.gov.br Contratos e o dataset disponível | 14:20 |
+| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:20 |
 | Luís Izycki | TaxiGov e o dataset disponível | 14:40 |
 | Jorge Ubirajara | Análise de dados do TaxiGov | 15:00 |
 | Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:20 |
