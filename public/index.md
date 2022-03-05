@@ -11,8 +11,8 @@ Open Data Day no Brasil,
 
 ![OPEN DATA SETS SEGES]({{ 'assets/images/open-datasets-seges.png' | relative_url }})
 
-Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Economia vai
-apresentar e mostrar como usar os dados abertos que disponibiliza.
+Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Economia
+apresentou e mostrou como usar os dados abertos que disponibiliza.
 
 ## Programação
 
@@ -25,11 +25,9 @@ apresentar e mostrar como usar os dados abertos que disponibiliza.
 | Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 |
 | Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 |
 
-Sujeita a alteração a qualquer momento até o horário do evento.
-
 ## Conjuntos de dados utilizados
 
-No evento vamos apresentar e utilizar alguns conjuntos de dados da SEGES:
+No evento apresentamos e utilizamos alguns conjuntos de dados da SEGES:
 
 * [Compras.gov.br Contratos](https://dados.gov.br/dataset/comprasnet-contratos)
 * [TaxiGov](https://dados.gov.br/dataset/corridas-do-taxigov)
@@ -45,11 +43,12 @@ Utilizaremos o ambiente do Jupyter Lab que está
 Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
 dependências que vamos utilizar, tornando tudo mais fácil.
 
+**Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
+o pacote `frictionless` no arquivo `Dockerfile`.
+
 ## Como participar
 
-Não há inscrição. É só chegar e participar! Para assistir, basta
-reproduzir o vídeo abaixo.
+Não havia inscrição. Era só chegar e participar!
 
-Se preferir, pode também abrir
-[a página do vídeo](https://tube.nocturlab.fr/videos/watch/59903907-8a90-45dc-904d-3e651a2ebe09)
-onde será possível fazer comentários e perguntas.
+Perdeu o evento? Não tem problema. Para assistir à gravação, basta
+reproduzir o vídeo abaixo.

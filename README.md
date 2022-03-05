@@ -1,6 +1,6 @@
 # Open Data Day 2022
 
-No sábado, 5 de março de 2022, será o Open Data Day 2022 da Secretaria
+No sábado, 5 de março de 2022, foi o Open Data Day 2022 da Secretaria
 de Gestão (SEGES) do Ministério da Economia.
 
 ![OPEN DATASETS SEGES](public/assets/images/open-datasets-seges.png)
@@ -9,17 +9,19 @@ de Gestão (SEGES) do Ministério da Economia.
 
 | Quem | O quê | Quando |
 |---|---|---|
-| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:00 |
-| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:20 |
-| Luís Izycki | TaxiGov e o dataset disponível | 14:40 |
-| Jorge Ubirajara | Análise de dados do TaxiGov | 15:00 |
-| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:20 |
+| Augusto Herrmann | Abertura | 14:00 |
+| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:10 |
+| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:30 |
+| Luís Izycki | TaxiGov e o dataset disponível | 14:50 |
+| Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 |
+| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 |
 
-Sujeita a alteração a qualquer momento até o horário do evento.
+É possível assistir à gravação no
+[site do evento](https://economiagovbr.github.io/opendataday2022/).
 
 ## Conjuntos de dados utilizados
 
-No evento vamos apresentar e utilizar alguns conjuntos de dados da SEGES:
+No evento apresentamos e utilizamos alguns conjuntos de dados da SEGES:
 
 * [Compras.gov.br Contratos](https://dados.gov.br/dataset/comprasnet-contratos)
 * [TaxiGov](https://dados.gov.br/dataset/corridas-do-taxigov)
@@ -34,3 +36,10 @@ Utilizaremos o ambiente do Jupyter Lab que está
 [neste repositório](https://github.com/augusto-herrmann/docker-jupyter-extensible).
 Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
 dependências que vamos utilizar, tornando tudo mais fácil.
+
+**Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
+o pacote `frictionless` no arquivo `Dockerfile`.
+
+## Códigos
+
+Os códigos utilizados no evento estão na pasta [notebooks](notebooks).
