@@ -46,6 +46,11 @@ dependências que vamos utilizar, tornando tudo mais fácil.
 **Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
 o pacote `frictionless` no arquivo `Dockerfile`.
 
+## Códigos
+
+Os cadernos Jupyter com os códigos utilizados na oficina estão
+[no Github](https://github.com/economiagovbr/opendataday2022/tree/main/notebooks).
+
 ## Como participar
 
 Não havia inscrição. Era só chegar e participar!
