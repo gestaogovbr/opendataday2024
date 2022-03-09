@@ -16,14 +16,14 @@ apresentou e mostrou como usar os dados abertos que disponibiliza.
 
 ## Programação
 
-| Quem | O quê | Quando |
-|---|---|---|
-| Augusto Herrmann | Abertura | 14:00 |
-| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:10 |
-| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:30 |
-| Luís Izycki | TaxiGov e o dataset disponível | 14:50 |
-| Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 |
-| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 |
+| Quem | O quê | Quando | Material |
+|---|---|---|---|
+| Augusto Herrmann | Abertura | 14:00 |  |
+| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:10 |  |
+| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:30 |  |
+| Luís Izycki | TaxiGov e o dataset disponível | 14:50 |  |
+| Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 | [slides](assets/slides/TaxiGov%20e%20Pandemia.pdf) |
+| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 | [cadernos](https://github.com/economiagovbr/opendataday2022/tree/main/notebooks) |
 
 ## Conjuntos de dados utilizados
 
