@@ -39,6 +39,17 @@
                 --animate-duration: 600ms;
                 --animate-delay: 0.7s;
                 }
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .attribution {
+                position: absolute;
+                right: 1em;
+                bottom: 0.5em;
+                color: #ffffff7a;
+            }
         </style>
         <link
             rel="stylesheet"
@@ -47,6 +58,12 @@
     </head>
     <body>
         <main class="center-screen">
+            <video playsinline autoplay muted loop>
+                <source
+                    src="colored-tapes-rostislav-uzunov.mp4"
+                    type="video/mp4"
+                >
+            </video>
             <div>
                 <img
                     class="animate__animated animate__backInLeft"
@@ -69,6 +86,9 @@
                 class="animate__animated animate__fadeIn animate__delay-3s"
             >
                 O evento já vai começar...
+            </p>
+            <p class="attribution">
+                Video por Rotislav Uzunov.
             </p>
         </main>
     </body>
