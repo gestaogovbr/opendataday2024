@@ -1,5 +1,5 @@
-Este sábado, 5 de março de 2022, é o [Open Data Day](https://opendataday.org/pt_br/) (dia dos dados abertos)! Neste dia, eventos ao redor do mundo reúnem pessoas para discutir e celebrar os dados abertos.
+Esta sexta-feira, 8 de março de 2024, é o [Open Data Day](https://opendataday.org/pt_br/) (dia dos dados abertos)! Neste dia, eventos ao redor do mundo reúnem pessoas para discutir e celebrar os dados abertos.
 
-Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Economia vai apresentar e mostrar como usar os dados abertos que disponibiliza. Mais informações no site do evento:
+Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Gestão e da Inovação em Serviços Públicos vai apresentar e mostrar como usar os dados abertos que disponibiliza. Mais informações no site do evento:
 
-https://economiagovbr.github.io/opendataday2022/
+https://gestaogovbr.github.io/opendataday2024/
