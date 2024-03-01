@@ -1,33 +1,32 @@
-# Open Data Day 2022
+# Open Data Day 2024
 
-No sábado, 5 de março de 2022, foi o Open Data Day 2022 da Secretaria
-de Gestão (SEGES) do Ministério da Economia.
+Na sexta-feira, 8 de março de 2024, será realizado o Open Data Day 2022
+da Secretaria de Gestão (SEGES) do Ministério da Gestão e da Inovação
+em Serviços Públicos (MGI).
 
 ![OPEN DATASETS SEGES](public/assets/images/open-datasets-seges.png)
 
 ## Programação
 
-| Quem | O quê | Quando | Material |
-|---|---|---|---|
-| Augusto Herrmann | Abertura | 14:00 |  |
-| Hugo Rezende | <ul><li>introdução</li><li>papel da CGINF</li><li>datasets: <ul><li>SIORG</li><li>Raio-X da Administração Pública Federal</li></ul></ul> | 14:10 |  |
-| Cleiton Pontes e Rodrigo Siqueira | Compras.gov.br Contratos e o dataset disponível | 14:30 |  |
-| Luís Izycki | TaxiGov e o dataset disponível | 14:50 |  |
-| Jorge Ubirajara | Análise de dados do TaxiGov | 15:10 | [slides](public/assets/slides/TaxiGov%20e%20Pandemia.pdf) |
-| Augusto Herrmann | Oficina de uso de dados abertos: Raio-X, Compras.gov.br Contratos e TaxiGov | 15:30 | [cadernos](notebooks) |
+A definir.
 
-É possível assistir à gravação no
-[site do evento](https://economiagovbr.github.io/opendataday2022/).
+Para ver como foi o ano anterior, veja o
+[site do evento](https://gestaogovbr.github.io/opendataday2022/).
 
-## Conjuntos de dados utilizados
+## Conjuntos de dados da SEGES
 
-No evento apresentamos e utilizamos alguns conjuntos de dados da SEGES:
+Os conjuntos de dados publicados pela SEGES são os seguintes:
 
-* [Compras.gov.br Contratos](https://dados.gov.br/dataset/comprasnet-contratos)
-* [TaxiGov](https://dados.gov.br/dataset/corridas-do-taxigov)
-* [Raio-X da Administração Pública Federal](https://dados.gov.br/dataset/raio-x-da-administracao-publica-federal)
+* [Compras Públicas do Governo Federal](https://dados.gov.br/dados/conjuntos-dados/compras-publicas-do-governo-federal)
+* [Compras.gov.br Contratos](https://dados.gov.br/dados/conjuntos-dados/comprasgovbr-contratos)
 * Estrutura organizacional do poder executivo federal
-([SIORG](https://dados.gov.br/dataset/siorg))
+  ([SIORG](https://dados.gov.br/dados/conjuntos-dados/dados-da-estrutura-organizacional-do-poder-executivo-federal-sistema-siorg))
+* [Processo Eletrônico Nacional - PEN](https://dados.gov.br/dados/conjuntos-dados/processo-eletronico-nacional---pen)
+* [Raio-X da Administração Pública Federal](https://dados.gov.br/dados/conjuntos-dados/raio-x-da-administracao-publica-federal)
+* [Sistema Integrado de Gestão Patrimonial (SIADS)](https://dados.gov.br/dados/conjuntos-dados/sistema-integrado-de-gestao-patrimonial-siads)
+* [TaxiGov](https://dados.gov.br/dados/conjuntos-dados/sistema-de-transportes-de-servidores-publicos---taxigov-v2)
+* [Transferências e Parcerias da União](https://dados.gov.br/dados/conjuntos-dados/transferencias-e-parcerias-da-uniao)
+* [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp) (verificar)
 
 Para participar das oficinas, sugerimos preparar o seu ambiente de
 análise de dados e baixar os conjuntos de dados.
