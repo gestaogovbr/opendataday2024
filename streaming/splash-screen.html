@@ -9,13 +9,13 @@
             body {
                 background: linear-gradient(
                     30deg,
-                    darkblue 0%,
-                    darkslateblue 20%,
-                    darkslateblue 30%,
-                    darkblue 50%,
-                    darkslateblue 70%,
-                    darkslateblue 80%,
-                    darkblue 100%);
+                    rgb(58, 4, 33) 0%,
+                    rgb(156, 20, 58) 20%,
+                    rgb(156, 20, 58) 30%,
+                    rgb(58, 4, 33) 50%,
+                    rgb(156, 20, 58) 70%,
+                    rgb(156, 20, 58) 80%,
+                    rgb(58, 4, 33) 100%);
                 background-size: 100% 1100%;
                 background-repeat: repeat;
                 height: 200vh;
@@ -35,18 +35,41 @@
                 text-align: center;
                 min-height: 100vh;
             }
+            :root {
+                --animate-duration: 600ms;
+                --animate-delay: 0.7s;
+                }
         </style>
+        <link
+            rel="stylesheet"
+            href="../public/assets/css/animate.min.css"
+        />
     </head>
     <body>
         <main class="center-screen">
             <div>
-                <img src="../public/assets/images/open-datasets-seges.png">
+                <img
+                    class="animate__animated animate__backInLeft"
+                    src="../public/assets/images/open-datasets-seges.png"
+                >
             </div>
-            <p><strong>5 de março de 2022</strong></p>
+            <p
+                class="animate__animated animate__bounceIn animate__delay-1s"
+                style="font-weight: bold;"
+            >
+                8 de março de 2024
+            </p>
             <div>
-                <img src="qr-code-site.png">
+                <img
+                    class="animate__animated animate__fadeIn animate__delay-2s"
+                    src="qr-code-site.png"
+                >
             </div>
-            <p>O evento já vai começar...</p>
+            <p
+                class="animate__animated animate__fadeIn animate__delay-3s"
+            >
+                O evento já vai começar...
+            </p>
         </main>
     </body>
 </html>
