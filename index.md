@@ -40,22 +40,21 @@ Dados Abertos:
 * [Transferências e Parcerias da União](https://dados.gov.br/dados/conjuntos-dados/transferencias-e-parcerias-da-uniao)
 * [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp)
 
-Para participar das oficinas, sugerimos preparar o seu ambiente de
-análise de dados e baixar os conjuntos de dados.
 
-Utilizaremos o ambiente do Jupyter Lab que está
-[neste repositório](https://github.com/augusto-herrmann/docker-jupyter-extensible).
+# Oficinas
+
+Para participar das oficinas, basta acompanhar a transmissão e, se quiser,
+reproduzir os códigos em seu computador.
+
+Utilizaremos o Jupyter Lab executando-o no próprio navegador web
+(a ferramenta que possibilita isso se chama
+[JupyterLite](https://jupyterlite.readthedocs.io/en/stable/)).
+
+Para explorar os dados usando o seu navegador, siga o link:
+[assets/notebooks](assets/notebooks) 🧪.
+
 Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
 dependências que vamos utilizar, tornando tudo mais fácil.
-
-**Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
-o pacote `frictionless` no arquivo `Dockerfile`.
-
-
-## Códigos
-
-Para explorar os dados usando o seu navegador, usando o JupyterLite, siga
-o link: [assets/notebooks](assets/notebooks).
 
 Os códigos dos cadernos Jupyter utilizados na oficina também estão
 [no Github](https://github.com/economiagovbr/opendataday2024/tree/main/notebooks).
