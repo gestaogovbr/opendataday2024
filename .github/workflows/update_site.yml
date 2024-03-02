@@ -24,14 +24,11 @@ jobs:
       - name: Build the JupyterLite site
         working-directory: jupyterlite
         run: |
-          jupyter lite build --contents notebooks --output-dir dist
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./jupyterlite/dist
+          jupyter lite build --contents notebooks --output-dir ../assets/jupyterlite
 
   update-site:
     runs-on: ubuntu-20.04
+    needs: build-jupyterlite
     name: Update site on Github Pages
     steps:
       - uses: actions/checkout@v2
@@ -44,21 +41,3 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           enable_jekyll: true
-
-  deploy-jupyterlite:
-    name: Deploy JupyterLite
-    needs: build-jupyterlite
-    if: github.ref == 'refs/heads/main'
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}/jupyterlite
-
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
