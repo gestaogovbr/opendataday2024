@@ -24,8 +24,8 @@ jobs:
       - name: Build the JupyterLite site
         working-directory: jupyterlite
         run: |
-          mkdir ../assets/notebooks/
-          jupyter lite build --contents notebooks --output-dir ../assets/notebooks
+          mkdir ../public/assets/notebooks/
+          jupyter lite build --contents notebooks --output-dir ../public/assets/notebooks
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
