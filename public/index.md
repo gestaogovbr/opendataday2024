@@ -15,6 +15,7 @@ Neste ano, a Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestã
 Inovação em Serviços Públicos apresenta e mostra como usar os dados
 abertos que disponibiliza.
 
+
 ## Programação
 
 A definir.
@@ -22,7 +23,6 @@ A definir.
 Para ver como foi o ano anterior, veja o
 [site do evento](https://gestaogovbr.github.io/opendataday2022/).
 
-[cadernos](https://github.com/economiagovbr/opendataday2024/tree/main/notebooks) |
 
 ## Conjuntos de dados
 
@@ -51,10 +51,15 @@ dependências que vamos utilizar, tornando tudo mais fácil.
 **Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
 o pacote `frictionless` no arquivo `Dockerfile`.
 
+
 ## Códigos
 
-Os cadernos Jupyter com os códigos utilizados na oficina estão
+Para explorar os dados usando o seu navegador, usando o JupyterLite, siga
+o link: [assets/notebooks](assets/notebooks).
+
+Os códigos dos cadernos Jupyter utilizados na oficina também estão
 [no Github](https://github.com/economiagovbr/opendataday2024/tree/main/notebooks).
+
 
 ## Como participar
 
