@@ -9,7 +9,7 @@ jobs:
 
   update-site:
     runs-on: ubuntu-latest
-    name: Build JupyterLite
+    name: Build and deploy site with JupyterLite
     steps:
       - name: Checkout
         uses: actions/checkout@v4
