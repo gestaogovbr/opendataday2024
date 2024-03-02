@@ -11,7 +11,7 @@ Open Data Day no Brasil,
 
 ![OPEN DATA SETS SEGES]({{ 'assets/images/open-datasets-seges.png' | relative_url }})
 
-Neste ano, a Secretaria de Gestão (SEGES) do Ministério da Gestão e da
+Neste ano, a Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestão e da
 Inovação em Serviços Públicos apresenta e mostra como usar os dados
 abertos que disponibiliza.
 
