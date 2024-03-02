@@ -1,7 +1,7 @@
 # Open Data Day 2024
 
 Na sexta-feira, 8 de março de 2024, será realizado o Open Data Day 2022
-da Secretaria de Gestão (SEGES) do Ministério da Gestão e da Inovação
+da Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestão e da Inovação
 em Serviços Públicos (MGI).
 
 ![OPEN DATASETS SEGES](public/assets/images/open-datasets-seges.png)
