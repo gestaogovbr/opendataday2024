@@ -26,7 +26,7 @@ Os conjuntos de dados publicados pela SEGES são os seguintes:
 * [Sistema Integrado de Gestão Patrimonial (SIADS)](https://dados.gov.br/dados/conjuntos-dados/sistema-integrado-de-gestao-patrimonial-siads)
 * [TaxiGov](https://dados.gov.br/dados/conjuntos-dados/sistema-de-transportes-de-servidores-publicos---taxigov-v2)
 * [Transferências e Parcerias da União](https://dados.gov.br/dados/conjuntos-dados/transferencias-e-parcerias-da-uniao)
-* [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp) (verificar)
+* [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp)
 
 Para participar das oficinas, sugerimos preparar o seu ambiente de
 análise de dados e baixar os conjuntos de dados.
