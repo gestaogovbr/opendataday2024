@@ -41,6 +41,18 @@ jobs:
           python -m pip install --user --upgrade pip
           python -m pip install --user -r requirements.txt
 
+      # Set up and use cache for Jekyll page generation
+      - name: Jekyll rendered pages cache
+        id: python-dependencies-cache
+        uses: actions/cache@v4
+        with:
+          # cache generated pages and assets
+          path: |
+            _site
+          key: jekyll-${{ hashFiles('public/**') }}
+          restore-keys: |
+            jekyll-
+
       # Build the main part of the site using Jekyll Docker image
       - name: Build the main site with Jekyll
         working-directory: public
@@ -48,7 +60,8 @@ jobs:
           docker run \
           -v ${{ github.workspace }}/public:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           -e PAGES_REPO_NWO=$GITHUB_REPOSITORY -e JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-          jekyll/builder:pages /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:pages /bin/bash -c \
+          "chmod -R 777 /srv/jekyll && jekyll build --incremental --future"
 
       # Build the lab part of the site using JupyterLab
       - name: Build the lab site with JupyterLite
