@@ -9,7 +9,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    name: Build and deploy site with Jekyll and JupyterLite
+    name: Build site with Jekyll and JupyterLite
     steps:
       # Check out from Git
       - name: Checkout
