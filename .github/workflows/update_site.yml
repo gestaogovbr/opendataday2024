@@ -20,11 +20,26 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Use cached Python dependencies if present (they do not change as often)
+      - name: Check Python dependencies cache
+        id: python-dependencies-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
       # Install Jupyter and any other Python packages defined in requirements.txt
-      - name: Install the dependencies
+      - name: Install Python dependencies
         working-directory: jupyterlite
         run: |
           python -m pip install -r requirements.txt
+
+      # Save Python dependencies in cache
+      - name: Store Python dependencies cache
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ steps.python-dependencies-cache.outputs.cache-primary-key }}
 
       # Build the main part of the site using Jekyll Docker image
       - name: Build the main site with Jekyll
