@@ -23,7 +23,7 @@ jobs:
       # Set up and use cache for Python dependencies
       - name: Python dependencies cache
         id: python-dependencies-cache
-        uses: actions/cache/save@v4
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
