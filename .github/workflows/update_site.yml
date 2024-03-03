@@ -46,6 +46,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}/public:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          -e PAGES_REPO_NWO=${{ github.workspace }} \
           jekyll/builder:pages /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
       # Build the lab part of the site using JupyterLab
