@@ -74,7 +74,7 @@ jobs:
         working-directory: jupyterlite
         run: |
           mkdir -p ../_site/notebooks/
-          sed -i -e 's/ENV_EXTENSIONS = Path(sys.prefix) / SHARE_LABEXTENSIONS/ENV_EXTENSIONS = Path('/home/ubuntu/.local/share/jupyter/labextensions/')/g' ~/.local/lib/python3.11/site-packages/jupyterlite_core/addons/federated_extensions.py
+          sed -i -e 's/ENV_EXTENSIONS = Path(sys.prefix) \/ SHARE_LABEXTENSIONS/ENV_EXTENSIONS = Path('\/home\/ubuntu\/.local\/share\/jupyter\/labextensions\/')/g' ~/.local/lib/python3.11/site-packages/jupyterlite_core/addons/federated_extensions.py
           jupyter lite build --contents notebooks --output-dir ../_site/notebooks
 
       # Ready and upload artifact for deployment
