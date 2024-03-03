@@ -41,4 +41,5 @@ o pacote `frictionless` no arquivo `Dockerfile`.
 
 ## Códigos
 
-Os códigos utilizados no evento estão na pasta [notebooks](notebooks).
+Os códigos utilizados no evento estão na pasta
+[jupyterlite/notebooks](jupyterlite/notebooks).
