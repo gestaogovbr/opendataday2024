@@ -55,6 +55,7 @@ jobs:
 
       # Build the main part of the site using Jekyll Docker image
       - name: Build the main site with Jekyll
+        if: steps.jekyll-build-cache.outputs.cache-hit != 'true'
         working-directory: public
         run: |
           docker run \
