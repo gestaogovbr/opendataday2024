@@ -37,12 +37,14 @@ jobs:
       - name: Build the lab site with JupyterLite
         working-directory: jupyterlite
         run: |
-          mkdir ../_site/notebooks/
-          jupyter lite build --contents notebooks --output-dir ../_site/notebooks
+          mkdir ../_site/public/notebooks/
+          jupyter lite build --contents notebooks --output-dir ../_site/public/notebooks
 
       # Ready and upload artifact for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site/public/
 
   deploy:
     needs: build
