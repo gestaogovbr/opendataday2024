@@ -33,6 +33,13 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
+      # Output created by Jekyll does not have write permissions
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rwX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+
       # Build the lab part of the site using JupyterLab
       - name: Build the lab site with JupyterLite
         working-directory: jupyterlite
