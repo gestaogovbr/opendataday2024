@@ -44,8 +44,6 @@ jobs:
       # Ready and upload artifact for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: public/_site
 
   deploy:
     needs: build
