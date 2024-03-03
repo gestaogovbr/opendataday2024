@@ -25,7 +25,7 @@ jobs:
         id: python-dependencies-cache
         uses: actions/cache/restore@v4
         with:
-          path: ~/.cache/pip
+          path: /usr/lib/python3/dist-packages
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
 
       # Install Jupyter and any other Python packages defined in requirements.txt
@@ -39,7 +39,7 @@ jobs:
       - name: Store Python dependencies cache
         uses: actions/cache/save@v4
         with:
-          path: ~/.cache/pip
+          path: /usr/lib/python3/dist-packages
           key: ${{ steps.python-dependencies-cache.outputs.cache-primary-key }}
 
       # Build the main part of the site using Jekyll Docker image
