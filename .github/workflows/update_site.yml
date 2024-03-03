@@ -29,6 +29,7 @@ jobs:
           path: |
             ~/.cache/pip
             ~/.local/lib/python3.11/site-packages
+            ~/.local/bin
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
