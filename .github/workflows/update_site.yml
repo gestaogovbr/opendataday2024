@@ -28,30 +28,24 @@ jobs:
 
       # Build the main part of the site using Jekyll Docker image
       - name: Build the main site with Jekyll
+        working-directory: public
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
-      # Output created by Jekyll does not have write permissions
-      - name: Fix permissions
-        run: |
-          chmod -c -R +rwX "_site/" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
-
       # Build the lab part of the site using JupyterLab
       - name: Build the lab site with JupyterLite
         working-directory: jupyterlite
         run: |
-          mkdir ../_site/public/notebooks/
-          jupyter lite build --contents notebooks --output-dir ../_site/public/notebooks
+          mkdir ../public/_site/notebooks/
+          jupyter lite build --contents notebooks --output-dir ../public/_site/notebooks
 
       # Ready and upload artifact for deployment
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site/public/
+          path: public/_site
 
   deploy:
     needs: build
