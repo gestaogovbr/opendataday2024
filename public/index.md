@@ -51,7 +51,7 @@ Utilizaremos o Jupyter Lab executando-o no próprio navegador web
 [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/)).
 
 Para explorar os dados usando o seu navegador, siga o link:
-[assets/notebooks](assets/notebooks) 🧪.
+[notebooks](notebooks) 🧪.
 
 Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
 dependências que vamos utilizar, tornando tudo mais fácil.

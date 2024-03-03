@@ -10,5 +10,5 @@ plugins:
 theme: jekyll-theme-leap-day
 show_downloads: false
 github:
-  link_url: assets/notebooks
+  link_url: notebooks
   link_name: Laboratório
