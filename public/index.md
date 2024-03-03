@@ -41,7 +41,7 @@ Dados Abertos:
 * [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp)
 
 
-# Oficinas
+## Laboratório e Oficinas
 
 Para participar das oficinas, basta acompanhar a transmissão e, se quiser,
 reproduzir os códigos em seu computador.
