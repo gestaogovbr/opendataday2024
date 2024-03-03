@@ -35,6 +35,8 @@ jobs:
             ${{ runner.os }}-pip-
 
       # Install Jupyter and any other Python packages defined in requirements.txt
+      #   --user flag is necessary to be able to cache packages installed by pip,
+      #   but not standard library Python packages
       - name: Install Python dependencies
         working-directory: jupyterlite
         run: |
@@ -64,11 +66,15 @@ jobs:
           jekyll/builder:pages /bin/bash -c \
           "chmod -R 777 /srv/jekyll && jekyll build --incremental --future"
 
-      # Build the lab part of the site using JupyterLab
+      # Build the lab part of the site using JupyterLite
+      #   the sed command replaces faulty code in JupyterLite that prevents using
+      #   it when installed in the user's home space
+      #   see https://github.com/jupyterlite/jupyterlite/discussions/1136
       - name: Build the lab site with JupyterLite
         working-directory: jupyterlite
         run: |
           mkdir -p ../_site/notebooks/
+          sed -i -e 's/ENV_EXTENSIONS = Path(sys.prefix) / SHARE_LABEXTENSIONS/ENV_EXTENSIONS = Path('/home/ubuntu/.local/share/jupyter/labextensions/')/g' ~/.local/lib/python3.11/site-packages/jupyterlite_core/addons/federated_extensions.py
           jupyter lite build --contents notebooks --output-dir ../_site/notebooks
 
       # Ready and upload artifact for deployment
