@@ -1,3 +1,5 @@
 .vscode
 .jekyll-cache
+.env
+_site/
 */*.mp4
