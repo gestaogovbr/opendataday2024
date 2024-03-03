@@ -30,6 +30,7 @@ jobs:
 
       # Install Jupyter and any other Python packages defined in requirements.txt
       - name: Install Python dependencies
+        if: steps.python-dependencies-cache.outputs.cache-hit != 'true'
         working-directory: jupyterlite
         run: |
           python -m pip install -r requirements.txt
