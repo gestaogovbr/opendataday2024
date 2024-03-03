@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  PYTHON_VERSION: "3.11"
+
 jobs:
 
   build:
@@ -18,7 +21,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
       # Set up and use cache for Python dependencies
       - name: Python dependencies cache
@@ -28,20 +31,22 @@ jobs:
           # cache downloaded and installed packages
           path: |
             ~/.cache/pip
-            ~/.local/lib/python3.11/site-packages
-            ~/.local/bin
+            ~/.env/lib/${{ env.PYTHON_VERSION }}/site-packages
+            ~/.env/bin
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
       # Install Jupyter and any other Python packages defined in requirements.txt
-      #   --user flag is necessary to be able to cache packages installed by pip,
+      #   Virtualenv is necessary to be able to cache packages installed by pip,
       #   but not standard library Python packages
       - name: Install Python dependencies
         working-directory: jupyterlite
         run: |
-          python -m pip install --user --upgrade pip
-          python -m pip install --user -r requirements.txt
+          python -m venv .env
+          source .env/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
 
       # Set up and use cache for Jekyll page generation
       - name: Jekyll rendered pages cache
@@ -71,6 +76,7 @@ jobs:
         working-directory: jupyterlite
         run: |
           mkdir -p ../_site/notebooks/
+          source .env/bin/activate
           jupyter lite build --contents notebooks --output-dir ../_site/notebooks
 
       # Ready and upload artifact for deployment
