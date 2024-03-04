@@ -21,7 +21,7 @@ abertos que disponibiliza.
 | Quem | O quê | Quando | Material |
 |---|---|---|---|
 | Augusto Herrmann | O que é o Open Data Day | 15:00 |  |
-| Hugo Rezende | Abertura | 15:10 |  |
+| Priscila Cabral | Abertura | 15:10 |  |
 | a definir | Datasets da DELOG | 15:30 |  |
 | a definir | Datasets da Central de Compras | 15:50 |  |
 | a definir | Datasets da DTPAR | 16:10 |  |
