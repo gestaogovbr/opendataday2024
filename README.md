@@ -13,9 +13,8 @@ em Serviços Públicos (MGI).
 | Augusto Herrmann | O que é o Open Data Day | 15:00 |  |
 | Priscila Cabral | Abertura | 15:10 |  |
 | a definir | Datasets da DELOG | 15:30 |  |
-| a definir | Datasets da Central de Compras | 15:50 |  |
-| a definir | Datasets da DTPAR | 16:10 |  |
-| Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:30 | [cadernos](notebooks) |
+| a definir | Datasets da DTPAR | 15:50 |  |
+| Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:10 | [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).
@@ -24,9 +23,7 @@ Para ver como foi o ano anterior, veja o
 
 Os conjuntos de dados publicados pela SEGES são os seguintes:
 
-* [Compras Públicas do Governo Federal](https://dados.gov.br/dados/conjuntos-dados/compras-publicas-do-governo-federal)
-* [Compras.gov.br Contratos](https://dados.gov.br/dados/conjuntos-dados/comprasgovbr-contratos)
-* Estrutura organizacional do poder executivo federal
+*5E5trutura organizacional do poder executivo federal
   ([SIORG](https://dados.gov.br/dados/conjuntos-dados/dados-da-estrutura-organizacional-do-poder-executivo-federal-sistema-siorg))
 * [Processo Eletrônico Nacional - PEN](https://dados.gov.br/dados/conjuntos-dados/processo-eletronico-nacional---pen)
 * [Raio-X da Administração Pública Federal](https://dados.gov.br/dados/conjuntos-dados/raio-x-da-administracao-publica-federal)

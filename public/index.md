@@ -23,9 +23,8 @@ abertos que disponibiliza.
 | Augusto Herrmann | O que é o Open Data Day | 15:00 |  |
 | Priscila Cabral | Abertura | 15:10 |  |
 | a definir | Datasets da DELOG | 15:30 |  |
-| a definir | Datasets da Central de Compras | 15:50 |  |
-| a definir | Datasets da DTPAR | 16:10 |  |
-| Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:30 | [cadernos](notebooks) |
+| a definir | Datasets da DTPAR | 15:50 |  |
+| Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:10 | [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).
