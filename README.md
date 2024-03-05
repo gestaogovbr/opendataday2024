@@ -10,14 +10,18 @@ em Serviços Públicos (MGI).
 
 Programação provisória:
 
-| Quem | O quê | Quando | Material |
+| Quem | Cargo | O quê | Slides ou referências |
 |---|---|---|---|
-| Augusto Herrmann | O que é o Open Data Day | 15:00 |  |
-| Priscila Cabral <br /> Diretora de Informações, Serviços e Sistemas de Gestão | Abertura | 15:10 |  |
-| Magnum Costa de Oliveira <br /> Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras | 15:30 |  |
-| André Ruperto de Macêdo <br /> Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) | 15:40 |  |
-| a definir | Datasets da DTPAR | 15:50 |  |
-| Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:10 | [cadernos](notebooks) |
+|  |  | Início | 15:00 |
+| Kathyana Buonafina | Secretária Adjunta de Gestão e Inovação | Abertura |  |
+| Priscila Cabral | Diretora de Informações, Serviços e Sistemas de Gestão |  |  |
+| Karyta Lopes | Coordenadora de Transparência (Ouvidoria MGI) |  |
+| Augusto Herrmann | Coordenador de Inovação e Ciência de Dados - Substituto | O que é o Open Data Day |  |
+| Magnum Costa de Oliveira | Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras |  |
+| Cleiton Pontes | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
+| André Ruperto de Macêdo <br /> Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) |  |
+| a definir |  | Datasets da DTPAR |  |
+|  |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).
