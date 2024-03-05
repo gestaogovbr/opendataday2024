@@ -77,4 +77,5 @@ Os códigos dos cadernos Jupyter utilizados na oficina também estão
 
 Não há inscrição. É só chegar e participar!
 
-O link para assistir ao *streaming* será divulgado em breve.
+O link para assistir ao *streaming* será divulgado em breve, aqui mesmo
+nesta página.
