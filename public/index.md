@@ -18,11 +18,14 @@ abertos que disponibiliza.
 
 ## Programação
 
+Segue a programação provisória:
+
 | Quem | O quê | Quando | Material |
 |---|---|---|---|
 | Augusto Herrmann | O que é o Open Data Day | 15:00 |  |
-| Priscila Cabral | Abertura | 15:10 |  |
-| a definir | Datasets da DELOG | 15:30 |  |
+| Priscila Cabral <br /> Diretora de Informações, Serviços e Sistemas de Gestão | Abertura | 15:10 |  |
+| Magnum Costa de Oliveira <br /> Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras | 15:30 |  |
+| André Ruperto de Macêdo <br /> Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) | 15:40 |  |
 | a definir | Datasets da DTPAR | 15:50 |  |
 | Augusto Herrmann | Oficina de uso de dados abertos no Jupyter Lab | 16:10 | [cadernos](notebooks) |
 
