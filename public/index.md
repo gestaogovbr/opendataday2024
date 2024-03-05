@@ -28,8 +28,8 @@ Segue a programação provisória:
 | Karyta Lopes | Coordenadora de Transparência (Ouvidoria MGI) |  |
 | Augusto Herrmann | Coordenador de Inovação e Ciência de Dados - Substituto | O que é o Open Data Day |  |
 | Magnum Costa de Oliveira | Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras |  |
-| Cleiton Pontes | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
-| André Ruperto de Macêdo <br /> Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) |  |
+| Cleiton Pontes |  | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
+| André Ruperto de Macêdo | Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) |  |
 | a definir |  | Datasets da DTPAR |  |
 |  |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
 
