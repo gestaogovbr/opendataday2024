@@ -30,7 +30,7 @@ Segue a programação provisória:
 | Magnum Costa de Oliveira | Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras |  |
 | Cleiton Pontes |  | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
 | André Ruperto de Macêdo | Estagiário | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) |  |
-| a definir |  | Datasets da DTPAR |  |
+| José de Aguiar Neto |  | Transferegov.br e dados abertos |  |
 |  |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
