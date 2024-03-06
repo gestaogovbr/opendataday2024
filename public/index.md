@@ -21,24 +21,24 @@ abertos que disponibiliza.
 Segue a programação provisória:
 
 <table>
-<thead>
-<tr><th>Quem</th><th>Cargo ou função</th><th>O quê</th><th>Slides ou referências</th></tr>
-</thead>
-<tbody>
-<tr><td>  </td><td>  </td><td> Início </td><td> 15:00 </td></tr>
-<tr><td> Kathyana Buonafina </td><td> Secretária Adjunta de Gestão e Inovação <td rowspan="3" colspan="2"> Abertura </td></tr>
-<tr><td> Priscila Cabral </td><td> Diretora de Informações, Serviços e Sistemas de Gestão</tr>
-<tr><td> Karyta Lopes </td><td> Coordenadora de Transparência (Ouvidoria MGI)</tr>
-<tr><td> Augusto Herrmann </td><td> Coordenador de Inovação e Ciência de Dados - Substituto </td><td> O que é o Open Data Day </td><td>  </td></tr>
-<tr><td> Magnum Costa de Oliveira </td><td> Coordenador de Transparência e Informações Gerenciais </td><td> Apresentação do projeto da API de Compras </td><td>  </td></tr>
-<tr><td> Cleiton Pontes </td><td>  </td><td> Sistema Integrado de Gestão Patrimonial (SIADS) </td><td>  </td></tr>
-<tr><td> Marcelo Bastos </td><td> Analista de Políticas Sociais <td rowspan="2"> Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td><td rowspan="2">  </td></tr>
-<tr><td> André Ruperto de Macêdo </td><td> Estagiário </td></tr>
-<tr><td> José de Aguiar Neto </td><td> </td><td rowspan="2"> Transferegov.br e dados abertos </td><td rowspan="2">  </td></tr>
-<tr><td> Felipe La Rocca Teixeira </td><td> Analista em Tecnologia da Informação </td></tr>
-<tr><td> Augusto Herrmann </td><td>  </td><td> Oficina de uso de dados abertos no Jupyter Lab </td><td> 16:10 <a href="notebooks">cadernos</a> </td></tr>
-</tbody>
-<table>
+  <thead>
+    <tr><th>Quem</th><th>Cargo ou função</th><th>O quê</th><th>Slides ou referências</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>  </td><td>  </td><td> Início </td><td> 15:00 </td></tr>
+    <tr><td> Kathyana Buonafina </td><td> Secretária Adjunta de Gestão e Inovação <td rowspan="3" colspan="2"> Abertura </td></tr>
+    <tr><td> Priscila Cabral </td><td> Diretora de Informações, Serviços e Sistemas de Gestão</tr>
+    <tr><td> Karyta Lopes </td><td> Coordenadora de Transparência (Ouvidoria MGI)</tr>
+    <tr><td> Augusto Herrmann </td><td> Coordenador de Inovação e Ciência de Dados - Substituto </td><td> O que é o Open Data Day </td><td>  </td></tr>
+    <tr><td> Magnum Costa de Oliveira </td><td> Coordenador de Transparência e Informações Gerenciais </td><td> Apresentação do projeto da API de Compras </td><td>  </td></tr>
+    <tr><td> Cleiton Pontes </td><td>  </td><td> Sistema Integrado de Gestão Patrimonial (SIADS) </td><td>  </td></tr>
+    <tr><td> Marcelo Bastos </td><td> Analista de Políticas Sociais <td rowspan="2"> Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td><td rowspan="2">  </td></tr>
+    <tr><td> André Ruperto de Macêdo </td><td> Estagiário </td></tr>
+    <tr><td> José de Aguiar Neto </td><td> </td><td rowspan="2"> Transferegov.br e dados abertos </td><td rowspan="2">  </td></tr>
+    <tr><td> Felipe La Rocca Teixeira </td><td> Analista em Tecnologia da Informação </td></tr>
+    <tr><td> Augusto Herrmann </td><td>  </td><td> Oficina de uso de dados abertos no Jupyter Lab </td><td> 16:10 <a href="notebooks">cadernos</a> </td></tr>
+  </tbody>
+</table>
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).
