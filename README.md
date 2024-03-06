@@ -13,15 +13,15 @@ Programação provisória:
 | Quem | Cargo ou função | O quê | Slides ou referências |
 |---|---|---|---|
 |  |  | Início | 15:00 |
-| Kathyana Buonafina | Secretária Adjunta de Gestão e Inovação <td rowspan="3"> Abertura </td> <td rowspan="3"></td>
+| Kathyana Buonafina | Secretária Adjunta de Gestão e Inovação | Abertura |  |
 | Priscila Cabral | Diretora de Informações, Serviços e Sistemas de Gestão |  |  |
 | Karyta Lopes | Coordenadora de Transparência (Ouvidoria MGI) |  |
 | Augusto Herrmann | Coordenador de Inovação e Ciência de Dados - Substituto | O que é o Open Data Day |  |
 | Magnum Costa de Oliveira | Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras |  |
 | Cleiton Pontes |  | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
-| Marcelo Bastos | Analista de Políticas Sociais <td rowspan="2"> Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td>  |
+| Marcelo Bastos | Analista de Políticas Sociais | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td>  |
 | André Ruperto de Macêdo | Estagiário |  |  |
-| José de Aguiar Neto |  <td rowspan="2"> Transferegov.br e dados abertos </td>  |
+| José de Aguiar Neto |  | Transferegov.br e dados abertos |  |
 | Felipe La Rocca Teixeira | Analista em Tecnologia da Informação |  |  |
 | Augusto Herrmann |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
 
