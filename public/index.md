@@ -26,7 +26,7 @@ Segue a programação provisória:
   </thead>
   <tbody>
     <tr><td>  </td><td>  </td><td> Início </td><td> 15:00 </td></tr>
-    <tr><td> Kathyana Buonafina </td><td> Secretária Adjunta de Gestão e Inovação <td rowspan="3" colspan="2"> Abertura </td></tr>
+    <tr><td> Kathyana Buonafina </td><td> Secretária Adjunta de Gestão e Inovação <td rowspan="3"> Abertura </td><td rowspan="3"></td></tr>
     <tr><td> Priscila Cabral </td><td> Diretora de Informações, Serviços e Sistemas de Gestão</tr>
     <tr><td> Karyta Lopes </td><td> Coordenadora de Transparência (Ouvidoria MGI)</tr>
     <tr><td> Augusto Herrmann </td><td> Coordenador de Inovação e Ciência de Dados - Substituto </td><td> O que é o Open Data Day </td><td>  </td></tr>
