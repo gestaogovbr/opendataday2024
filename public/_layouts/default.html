@@ -25,10 +25,11 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>Ver no GitHub</strong></a>
+        <a href="{{ site.video.link_url }}" class="button fork"><strong>{{ site.video.link_name }}</strong></a>
+        <a href="{{ site.lab.link_url }}" class="button fork"><strong>{{ site.lab.link_name }}</strong></a>
           <div class="downloads">
             <ul>
-              <li><a href="{{ site.github.link_url }}" class="button">{{ site.github.link_name }}</a></li>
+              <li><a href="{{ site.github.repository_url }}" class="button"><strong>Ver no GitHub</strong></a></li>
             </ul>
           </div>
       </div><!-- end banner -->
@@ -39,9 +40,7 @@
       </nav>
       <section>
         {{ content }}
-        <!-- religar quando houver o link
-        <iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://tube.nocturlab.fr/videos/embed/59903907-8a90-45dc-904d-3e651a2ebe09" frameborder="0" allowfullscreen></iframe>
-        -->
+        <iframe title="Open Data Day: Open Datasets SEGES" width="560" height="315" src="https://fediverse.tv/videos/embed/a8b3c0f2-f811-47b9-91b1-f6506d9f70ba" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
       </section>
       <footer>
         {% if site.github.is_project_page %}
