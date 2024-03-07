@@ -81,5 +81,6 @@ Os códigos dos cadernos Jupyter utilizados na oficina também estão
 
 Não há inscrição. É só chegar e participar!
 
-O link para assistir ao *streaming* será divulgado em breve, aqui mesmo
-nesta página.
+Quando o *streaming* começar, aparecerá logo abaixo.
+
+<iframe title="Open Data Day: Open Datasets SEGES" width="560" height="315" src="https://fediverse.tv/videos/embed/a8b3c0f2-f811-47b9-91b1-f6506d9f70ba" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
