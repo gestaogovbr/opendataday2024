@@ -11,7 +11,7 @@ em Serviços Públicos (MGI).
 | Quem | Cargo ou função | O quê | Slides ou referências |
 |---|---|---|---|
 |  |  | Início | 15:00 |
-| Miriam Chaves |  | Abertura |  |
+| Miriam Chaves | Assessora Especial da Ministra | Abertura |  |
 | Priscila Cabral | Diretora de Informações, Serviços e Sistemas de Gestão |  |  |
 | Karyta Lopes | Coordenadora de Transparência (Ouvidoria MGI) |  |
 | Augusto Herrmann | Coordenador de Inovação e Ciência de Dados - Substituto | O que é o Open Data Day |  |
