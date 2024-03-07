@@ -18,8 +18,6 @@ abertos que disponibiliza.
 
 ## Programação
 
-Segue a programação provisória:
-
 <table>
   <thead>
     <tr><th>Quem</th><th>Cargo ou função</th><th>O quê</th><th>Slides ou referências</th></tr>

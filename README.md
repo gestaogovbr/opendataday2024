@@ -8,8 +8,6 @@ em Serviços Públicos (MGI).
 
 ## Programação
 
-Programação provisória:
-
 | Quem | Cargo ou função | O quê | Slides ou referências |
 |---|---|---|---|
 |  |  | Início | 15:00 |
