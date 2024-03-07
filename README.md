@@ -19,8 +19,7 @@ em Serviços Públicos (MGI).
 | Cleiton Pontes |  | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
 | Marcelo Bastos | Analista de Políticas Sociais | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td>  |
 | André Ruperto de Macêdo | Estagiário |  |  |
-| José de Aguiar Neto |  | Transferegov.br e dados abertos |  |
-| Felipe La Rocca Teixeira | Analista em Tecnologia da Informação |  |  |
+| Felipe La Rocca Teixeira | Analista em Tecnologia da Informação | Transferegov.br e dados abertos |  |
 | Augusto Herrmann |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
