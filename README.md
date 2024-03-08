@@ -17,10 +17,10 @@ em Serviços Públicos (MGI).
 | Augusto Herrmann | Coordenador de Inovação e Ciência de Dados - Substituto | O que é o Open Data Day |  |
 | Magnum Costa de Oliveira | Coordenador de Transparência e Informações Gerenciais | Apresentação do projeto da API de Compras |  |
 | Cleiton Pontes |  | Sistema Integrado de Gestão Patrimonial (SIADS) |  |
-| Marcelo Bastos | Analista de Políticas Sociais | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td>  |
-| André Ruperto de Macêdo | Estagiário |  |  |
 | Felipe La Rocca Teixeira | Analista em Tecnologia da Informação | Transferegov.br e dados abertos |  |
-| Augusto Herrmann |  | Oficina de uso de dados abertos no Jupyter Lab | 16:10 [cadernos](notebooks) |
+| Marcelo Bastos | Analista de Políticas Sociais | Estudo de caso (Análise Exploratória de Dados - PCA/PGC) | 16: 10 [cadernos](https://colab.research.google.com/github/marcelo7bastos/dados_aberto_pgc_pca/blob/main/pgc_pca_itens_apresentacao.ipynb) (link p/ Google Colab) |
+| André Ruperto de Macêdo | Estagiário |  |  |
+| Augusto Herrmann |  | Oficina de uso de dados abertos no Jupyter Lab | [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).

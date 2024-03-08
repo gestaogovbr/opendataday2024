@@ -30,10 +30,10 @@ abertos que disponibiliza.
     <tr><td> Augusto Herrmann </td><td> Coordenador de Inovação e Ciência de Dados - Substituto </td><td> O que é o Open Data Day </td><td>  </td></tr>
     <tr><td> Magnum Costa de Oliveira </td><td> Coordenador de Transparência e Informações Gerenciais </td><td> Apresentação do projeto da API de Compras </td><td>  </td></tr>
     <tr><td> Cleiton Pontes </td><td>  </td><td> Sistema Integrado de Gestão Patrimonial (SIADS) </td><td>  </td></tr>
-    <tr><td> Marcelo Bastos </td><td> Analista de Políticas Sociais <td rowspan="2"> Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td><td rowspan="2">  </td></tr>
-    <tr><td> André Ruperto de Macêdo </td><td> Estagiário </td></tr>
     <tr><td> Felipe La Rocca Teixeira </td><td> Analista em Tecnologia da Informação </td><td> Transferegov.br e dados abertos </td><td>  </td></tr>
-    <tr><td> Augusto Herrmann </td><td>  </td><td> Oficina de uso de dados abertos no Jupyter Lab </td><td> 16:10 <a href="notebooks">cadernos</a> </td></tr>
+    <tr><td> Marcelo Bastos </td><td> Analista de Políticas Sociais <td rowspan="2"> Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td><td rowspan="2"> 16:10 <a href="https://colab.research.google.com/github/marcelo7bastos/dados_aberto_pgc_pca/blob/main/pgc_pca_itens_apresentacao.ipynb" target="_blank">cadernos</a>] (link p/ Google Colab) </td></tr>
+    <tr><td> André Ruperto de Macêdo </td><td> Estagiário </td></tr>
+    <tr><td> Augusto Herrmann </td><td>  </td><td> Oficina de uso de dados abertos no Jupyter Lab </td><td> <a href="notebooks" target="_blank">cadernos</a> </td></tr>
   </tbody>
 </table>
 
