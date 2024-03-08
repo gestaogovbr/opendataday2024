@@ -1,0 +1,402 @@
+<a href="https://colab.research.google.com/github/marcelo7bastos/dados_aberto_pgc_pca/blob/main/pgc_pca_itens_apresentacao.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1tgqynd9_ez9vwMf8A0I34MoGkbLLqk3n" alt="MGI" style="width:15%;">
+  <img src="https://drive.google.com/uc?export=view&id=1H1UJH83UIQJKrpFTgvui4Pgh-wBN-1kS" alt="Open Datasets Seges" style="width:48%;">
+</p>
+
+
+---
+```
+Lei do Governo Digital LEI Nº 14.129, DE 29 DE MARÇO DE 2021
+
+IV - dados abertos: dados acessíveis ao público, representados em meio
+digital, estruturados em formato aberto, processáveis por máquina,
+referenciados na internet e disponibilizados sob licença aberta que
+permita sua livre utilização, consumo ou tratamento por qualquer pessoa,
+física ou jurídica;
+```
+
+# 📋 Entendendo o Negócio
+*objetivo da análise*
+
+
+> **Criar um ranking dos itens com maior volume financeiro previsto em 2023 no PGC - sistema de planejamento e gerenciamento de contratações**
+
+*curiosidade*
+
+> O objetivo do PGC é otimizar os processos de compras e contratações, garantindo maior eficiência, economicidade e transparência.
+*restrições*
+
+>Só podem ser usados dados do [Compras Públicas do Governo Federal](https://dados.gov.br/dados/conjuntos-dados/compras-publicas-do-governo-federal)
+
+*documentação oficial*
+>* [dadosabertos.compras.gov 1.0](https://documenter.getpostman.com/view/29812398/2s9YXe84kb#intro)
+>
+>* [swagger](https://dadosabertos.compras.gov.br/swagger-ui/index.html#/)
+
+
+*dados do projeto*
+>
+>* [repositório google drive](https://drive.google.com/drive/folders/1Cya_OcALYEGsmoudjIEv3l_-gaQNr6G1?usp=sharing)
+>
+>* [github](https://github.com/marcelo7bastos/dados_aberto_pgc_pca)
+*passo a passo*
+
+> 1. Lista de órgãos por cnpj
+> 2. Consultar todos os itens do PGC por cnpj
+> 3. Apresentar os dados
+
+
+
+
+
+
+
+*origem dos dados*
+
+
+> **APIs**
+>
+>[swagger](https://dadosabertos.compras.gov.br/swagger-ui/index.html#/):
+
+![swagger](https://drive.google.com/uc?export=view&id=1W1qD4zuFOQ3Oxi8CSAmwcrLjbOP8iLbz)
+#  ✈ Valendo!! ✈
+# @title Feramentas necessárias
+# Import
+import requests
+import os
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+from tqdm import tqdm  # Importa o tqdm
+from time import sleep
+from IPython.display import IFrame
+
+from google.colab import drive
+drive.mount('/content/drive')
+# 🖇 1. Listar ógãos por CNPJ 🖇
+
+Ler os dados em: "GET /modulo-uasg/2_consultarOrgao
+
+Swagger: https://dadosabertos.compras.gov.br/swagger-ui/index.html#/5%20-%20UASG/consultarOrgao
+
+Exemplo: https://dadosabertos.compras.gov.br/modulo-uasg/2_consultarOrgao?pagina=1&statusOrgao=true&usoSisg=true
+
+
+#função consulta cnpj
+def get_2_consultar_orgao(pagina, tamanho_pagina):
+    """
+    Faz uma solicitação GET para consultar órgãos da API de Dados Abertos do Governo.
+
+    Args:
+        pagina (int): Número da página de resultados a ser consultada.
+        tamanho_pagina (int): Número de registros por página.
+
+    Returns:
+        response (requests.Response): Objeto de resposta contendo os dados JSON, se a solicitação for bem-sucedida.
+    """
+    url = "https://dadosabertos.compras.gov.br/modulo-uasg/2_consultarOrgao"
+    params = {
+        "pagina": pagina,
+        "tamanhoPagina": tamanho_pagina,
+        "statusOrgao": "true", #Seria necessário consultar statusOrgao False?
+        "usoSisg": "true"
+    }
+    headers = {"accept": "*/*"}
+    try:
+        response = requests.get(url, params=params, headers=headers)
+        response.raise_for_status()  # Levanta uma exceção para respostas de erro (4xx, 5xx)
+        return response
+    except requests.exceptions.HTTPError as e:
+        print(f"Erro HTTP: {e}")
+    except requests.exceptions.RequestException as e:
+        print(f"Erro ao fazer a solicitação: {e}")
+#teste da função
+teste_funcao_consulta_orgao = get_2_consultar_orgao(1,50)
+teste_funcao_consulta_orgao
+#teste melhorando a visualização
+teste_funcao_consulta_orgao.json()
+#preciso, na verdade, de todos os órgão. Função com loop para pegar todas as páginas.
+#aproveitamos para trazer apenas os dados relevantes: 'nomeOrgao', 'cnpjCpfOrgao'
+def listar_orgaos(tamanho_pagina=500):
+    """
+    Lista todos os órgãos consultando todas as páginas disponíveis.
+
+    Args:
+        tamanho_pagina: Quantidade de registros por página.
+
+    Returns:
+        DataFrame com os dados de todos os órgãos listados.
+    """
+    pagina = 1
+    df_resultado_orgao = pd.DataFrame(columns=['nomeOrgao', 'cnpjCpfOrgao'])
+    while True:
+        data = get_2_consultar_orgao(pagina, tamanho_pagina).json()
+        if data and "resultado" in data:
+            df_temp = pd.DataFrame(data["resultado"], columns=['nomeOrgao', 'cnpjCpfOrgao'])
+            df_resultado_orgao = pd.concat([df_resultado_orgao, df_temp], ignore_index=True)
+            print(f"Página {pagina} processada.")
+            pagina += 1
+            if pagina > data.get("totalPaginas", 0):
+                break
+        else:
+            print("Erro ao processar dados ou chave 'resultado' não encontrada.")
+            break
+    return df_resultado_orgao
+#teste da função listar_orgaos
+teste_lista_orgaos = listar_orgaos()
+display(teste_lista_orgaos)
+#um aprimoramento, trazendo apenas os dados com CNPJs diferentes de zero.
+def lista_cnpjCpfOrgao_validos():
+    """
+    Filtra os CNPJs válidos (diferentes de 0) do DataFrame retornado pela função listar_orgaos
+    e retorna uma lista dos CNPJs/CPFs válidos, removendo duplicatas.
+
+    Returns:
+        list: Lista contendo os CNPJs/CPFs válidos dos órgãos, sem duplicatas.
+    """
+    df = listar_orgaos()  # Obtém o DataFrame com os dados dos órgãos
+    coluna = 'cnpjCpfOrgao'  # Define a coluna a ser filtrada
+
+    # Filtra o DataFrame para incluir apenas linhas onde o CNPJ/CPF é diferente de '0'
+    df_filtrado = df[df[coluna] != '0']
+
+    # Remove duplicatas baseado na coluna de CNPJs/CPFs
+    df_filtrado_sem_duplicatas = df_filtrado.drop_duplicates(subset=[coluna])
+
+    # Converte a coluna de CNPJs/CPFs filtrada e sem duplicatas em uma lista
+    lista_cnpj_validos = df_filtrado_sem_duplicatas[coluna].tolist()
+
+    return lista_cnpj_validos
+pronto, agora temos nossa função pronta para listar todos os cnpjs necessário na consulta!
+
+
+---
+---
+
+
+# ➿ 2. Consultar todos os itens por cnpj ➿
+Ler os dados em:"GET /modulo-pgc/1_consultarPgcDetalhe
+
+
+Swagger: https://dadosabertos.compras.gov.br/swagger-ui/index.html#/4%20-%20PGC/consultarPgcDetalhe
+
+Exemplo: https://dadosabertos.compras.gov.br/modulo-pgc/1_consultarPgcDetalhe?pagina=1&tamanhoPagina=50&orgao=00394494000136&anoPcaProjetoCompra=2023
+#função para ler um órgão, em um determinado ano, passando a página e o tamanho da página
+def get_1_consultar_pgc_detalhe(orgao, ano_pca_projeto_compra, pagina, tamanho_pagina):
+    """
+    Faz uma solicitação GET à API de Dados Abertos do Governo para consultar detalhes do PGC (Plano de Contratações Anuais) de um determinado órgão.
+
+    Args:
+        orgao (str): Identificador do órgão para o qual os detalhes do PGC serão consultados.
+        ano_pca_projeto_compra (int): Ano do Plano de Contratações Anuais a ser consultado.
+        pagina (int): Número da página de resultados a ser consultada.
+        tamanho_pagina (int): Número de registros por página.
+
+    Returns:
+        requests.Response: Objeto de resposta contendo os dados JSON da página solicitada, se a solicitação for bem-sucedida.
+
+    Raises:
+        requests.exceptions.HTTPError: Se a solicitação HTTP resultar em um erro de cliente (4xx) ou servidor (5xx).
+        requests.exceptions.RequestException: Para outros tipos de erros de solicitação, como problemas de conexão.
+
+    Exemplo:
+        resposta = get_1_consultar_pgc_detalhe('00394452000103', 2023, 1, 50)
+        dados = resposta.json()
+        print(dados)
+    """
+    url = "https://dadosabertos.compras.gov.br/modulo-pgc/1_consultarPgcDetalhe"
+    params = {
+        "orgao": orgao,
+        "anoPcaProjetoCompra": ano_pca_projeto_compra,
+        "pagina": pagina,
+        "tamanhoPagina": tamanho_pagina
+    }
+    headers = {"accept": "*/*"}
+
+    try:
+        response = requests.get(url, params=params, headers=headers)
+        response.raise_for_status()  # Levanta uma exceção para respostas de erro
+        return response
+    except requests.exceptions.HTTPError as e:
+        print(f"Erro HTTP: {e}")
+        raise
+    except requests.exceptions.RequestException as e:
+        print(f"Erro ao fazer a solicitação: {e}")
+        raise
+
+#vamos testar??
+resposta = get_1_consultar_pgc_detalhe('00394494000136', 2023, 1, 50)
+dados = resposta.json()
+display(dados)
+pronto, agora temos nossa função pronta para listar todos os cnpjs e realizar a consulta indo no detalhe!
+
+
+---
+---
+# Raspando os dados 🧺
+*observação: para fins didáticos e por conta do nosso tempo, vou reduzir o tamanho da lista de CNPJs a serem consultados!*
+# @title Extrair dados com órgãos e quantidade de registro
+
+# Supondo que estas são as funções e variáveis definidas em algum lugar do seu código
+#orgaos = lista_cnpjCpfOrgao_validos()
+orgaos = ['9773169000159', '00119784000171', '00394445000101' ]  # Apenas para teste
+
+anos_pca_projeto_compra = [2023]
+tamanho_pagina = 50
+
+# Lista para armazenar os dados coletados
+data_total_registros = []
+# Lista para armazenar os erros
+erros = []
+
+# Função para realizar a chamada à API com retentativas
+def chamar_api_com_retentativa(orgao, ano, pagina, tamanho_pagina, max_tentativas=6):
+    tentativas = 0
+    while tentativas < max_tentativas:
+        try:
+            response = get_1_consultar_pgc_detalhe(orgao, ano, pagina, tamanho_pagina)
+            if response.status_code == 200:
+                return response
+            else:
+                print(f"Tentativa {tentativas + 1} falhou: Código de status {response.status_code}")
+                tentativas += 1
+                sleep(1)  # Espera 1 segundo antes da próxima tentativa
+        except requests.exceptions.RequestException as e:
+            print(f"Tentativa {tentativas + 1} falhou: {e}")
+            tentativas += 1
+            sleep(1)
+    return None
+
+# Loop pelos anos com barra de progresso do tqdm
+for ano in tqdm(anos_pca_projeto_compra, desc='Anos'):
+    # Loop pelos órgãos com barra de progresso do tqdm
+    for orgao in tqdm(orgaos, desc='Órgãos', leave=False):
+        print(f"Processando órgão {orgao} para o ano {ano}")
+        pagina = 1  # Definindo a página inicial
+
+        # Chama a API com retentativas
+        response = chamar_api_com_retentativa(orgao, ano, pagina, tamanho_pagina)
+
+        if response and response.status_code == 200:
+            data = response.json()
+            total_registros = data.get("totalRegistros", 0)  # Usa .get para evitar KeyError
+
+            # Adiciona o total de registros coletado à lista
+            data_total_registros.append({
+                "ano": ano,
+                "orgao": orgao,
+                "totalRegistros": total_registros
+            })
+        else:
+            erro = {"ano": ano, "orgao": orgao, "erro": "Falha após máximas tentativas ou erro de rede"}
+            erros.append(erro)
+            print(f"Erro registrado para o órgão {orgao} no ano {ano}")
+
+# Criação dos DataFrames
+df_total_registros = pd.DataFrame(data_total_registros)
+df_erros = pd.DataFrame(erros)
+
+# Exibição do DataFrame dos registros
+print(df_total_registros)
+# Exibição do DataFrame dos erros
+print(df_erros)
+
+# @title Resultado da Extração
+# quem quiser já guardar o resultado num CSV, pode ser interessante
+#df_total_registros.to_csv('df_total_registros.csv')
+
+# Transformando os registros  numa lista
+lista_orgaos_c_pgc = df_total_registros[df_total_registros['totalRegistros'] > 0]['orgao'].tolist()
+
+#Quantos registros tínhamos e quantos temos agora?
+print(f"O total de CNPJs na lista original é {len(df_total_registros)}, e serão na lista final é {len(lista_orgaos_c_pgc)}. E, no total, tem-se {df_total_registros['totalRegistros'].sum()} itens.")
+
+print(f"Tabela com o totla de registros por órgão")
+display(df_total_registros)
+# @title Extrair dados dos itens
+
+#### Entrada de Dados ####
+orgaos = lista_orgaos_c_pgc #lista de órgãos que efetivamente tem PCA - lembrando que reduzimos a quantidade de CNPJs
+
+anos_pca_projeto_compra = [2022, 2023] #poderíamos passar vários anos
+
+tamanho_pagina = 500 # Poderíamos alterar o tamanho da páginas
+
+#Seleção de colunas com dados de interesse
+colunas_interesse = ['orgao', 'nomeUasg','tipoItem','codigoClasseMaterial','nomeClasseMaterial','codigoGrupoServico','nomeGrupoServico', 'itemSustentavel', 'codigoItemCatalogo', 'descricaoItemCatalogo', 'valorTotalItem', 'anoPcaProjetoCompra']
+#### Fim entrada de Dados ####
+
+# Inicialização do arquivo CSV
+if os.path.exists('items_planejados.csv'):
+    os.remove('items_planejados.csv')  # Remove o arquivo se já existir para começar do zero
+
+for ano in anos_pca_projeto_compra:
+    for orgao in orgaos:
+        print(f"Processando órgão {orgao} para o ano {ano}")
+        pagina = 1
+
+        while True:
+            try:
+                response = get_1_consultar_pgc_detalhe(orgao, ano, pagina, tamanho_pagina)
+                if response.status_code == 200:
+                    data = response.json()
+                    if "resultado" in data:
+                        df_temp = pd.DataFrame(data["resultado"], columns=colunas_interesse[:-1])  # Colunas, excluindo ano
+                        df_temp['anoPcaProjetoCompra'] = ano  # Adiciona coluna de ano
+
+                        # Teste se 'codigoItemCatalogo' é nulo e descarte essas linhas
+                        df_temp = df_temp.dropna(subset=['codigoItemCatalogo'])
+
+                        if not df_temp.empty:
+                            df_temp.to_csv('items_planejados.csv', mode='a', header=not os.path.exists('items_planejados.csv'), index=False)
+
+                        total_paginas = data["totalPaginas"]
+                        print(f"Página {pagina} de {total_paginas} processada.")
+                    else:
+                        print("Erro: chave 'resultado' não encontrada.")
+                        break
+                else:
+                    print(f"Erro na solicitação: {response.status_code}")
+                    break
+            except Exception as e:
+                print(f"Erro ao processar os dados: {e}")
+                break
+
+            pagina += 1
+            if pagina > total_paginas:
+                break
+#🕺 3. Apresentar os dados 💃
+# @title Tabela
+df_itens_planejados = pd.read_csv('/content/items_planejados.csv')
+display(df_itens_planejados)
+Caso alguém quera ver o resultado da extração feita em 06/03/2024
+# @title Extração 06/03/2024
+# carregar planilha armazenada no local: /content/drive/MyDrive/MGI/pgc_pca/items_planejados.csv
+df_itens_planejados = pd.read_csv("/content/drive/MyDrive/MGI/pgc_pca/items_planejados20240306.csv")
+
+display(df_itens_planejados)
+
+## 3.1 Com um passo a mais...
+# @title Painel com os MATERIAS planejados
+IFrame('https://app.powerbi.com/view?r=eyJrIjoiZWFlZTA2YjctZGJhNy00ZmVhLTlkN2ItN2JjNTQ2Zjc0NGM5IiwidCI6IjNlYzkyOTY5LTVhNTEtNGYxOC04YWM5LWVmOThmYmFmYTk3OCJ9&pageName=ReportSection8c1c4be1e8ccb714b3eb', width=1140, height=540)
+
+# @title Painel com os SERVIÇOS  planejados
+IFrame('https://app.powerbi.com/view?r=eyJrIjoiZWFlZTA2YjctZGJhNy00ZmVhLTlkN2ItN2JjNTQ2Zjc0NGM5IiwidCI6IjNlYzkyOTY5LTVhNTEtNGYxOC04YWM5LWVmOThmYmFmYTk3OCJ9&pageName=ReportSectionf63e169e0dd38a9042ab', width=1140, height=540)
+# ✌Parabéns para a equipe organizadora 💯
+
+X - fomento ao desenvolvimento de novas tecnologias destinadas à construção de ambiente de gestão pública participativa e democrática e à melhor oferta de serviços públicos.
+
+# Nosso time 🏋
+
+* Luiz Gonzaga de Oliveira
+* Cristina Portela
+* Magnum Costa
+* Hugo Souto
+* Fabiano Brandão
+* Guilherme Rocha
+* André Ruperto
+* [Marcelo Bastos](https://www.linkedin.com/in/marcelo-cabreira-bastos/) <img src="https://drive.google.com/uc?id=1AyUiwLMNr4d2bGpay6niCsKuLdETOrPL" alt="lkdn" width="10">
+
+# @title fim
+print("=== Obrigado e Fim! ===")
