@@ -4,15 +4,15 @@ layout: default
 
 Esta sexta-feira, 8 de março de 2024, acontece o
 [Open Data Day](https://opendataday.org/pt_br/) da SEGES!
-Neste dia, eventos ao redor do mundo reúnem pessoas para discutir e
+Nesse dia, eventos ao redor do mundo reúnem pessoas para discutir e
 celebrar os dados abertos. Para saber mais sobre os eventos passados do
 Open Data Day no Brasil,
 [veja este texto](https://herrmann.tech/pt/blog/2022/02/23/open-data-day-2022-esta-chegando-conheca-os-anteriores-no-brasil.html).
 
 ![OPEN DATA SETS SEGES]({{ 'assets/images/open-datasets-seges.png' | relative_url }})
 
-Neste ano, a Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestão e da
-Inovação em Serviços Públicos apresenta e mostra como usar os dados
+Nesse ano, a Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestão e da
+Inovação em Serviços Públicos apresentou e mostrou como usar os dados
 abertos que disponibiliza.
 
 
@@ -33,7 +33,7 @@ abertos que disponibiliza.
     <tr><td> Felipe La Rocca Teixeira </td><td> Analista em Tecnologia da Informação </td><td> Transferegov.br e dados abertos </td><td>  </td></tr>
     <tr><td> Marcelo Bastos </td><td> Analista de Políticas Sociais <td rowspan="2"> Oficina: Estudo de caso (Análise Exploratória de Dados - PCA/PGC) </td><td rowspan="2"> 16:10 <a href="https://colab.research.google.com/github/marcelo7bastos/dados_aberto_pgc_pca/blob/main/pgc_pca_itens_apresentacao.ipynb" target="_blank">cadernos</a>] (link p/ Google Colab) </td></tr>
     <tr><td> André Ruperto de Macêdo </td><td> Estagiário </td></tr>
-    <tr><td> Augusto Herrmann </td><td>  </td><td> Oficina: uso de dados de estrutura organizacional </td><td> <a href="notebooks" target="_blank">cadernos</a> </td></tr>
+    <tr><td> Augusto Herrmann </td><td>  </td><td> Oficina de uso de dados: Compras.gov.br contratos e estrutura organizacional </td><td> <a href="notebooks" target="_blank">cadernos</a> </td></tr>
   </tbody>
 </table>
 
@@ -63,15 +63,15 @@ Dados Abertos:
 Para participar das oficinas, basta acompanhar a transmissão e, se quiser,
 reproduzir os códigos em seu computador.
 
-Utilizaremos o Jupyter Lab executando-o no próprio navegador web
+Utilizamos o Jupyter Lab executando-o no próprio navegador web
 (a ferramenta que possibilita isso se chama
 [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/)).
 
 Para explorar os dados usando o seu navegador, siga o link:
 [notebooks](notebooks) 🧪.
 
-Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
-dependências que vamos utilizar, tornando tudo mais fácil.
+Posso usar outro? Claro que pode. Mas este não precisa instalar nada e nem
+criar conta ou fazer login, tornando tudo mais fácil.
 
 Os códigos dos cadernos Jupyter utilizados na oficina também estão
 [no Github](https://github.com/economiagovbr/opendataday2024/tree/main/notebooks).
@@ -79,6 +79,7 @@ Os códigos dos cadernos Jupyter utilizados na oficina também estão
 
 ## Como participar
 
-Não há inscrição. É só chegar e participar!
+Não houve inscrição. Era só chegar e participar! Não será fornecido,
+todavia, certificado de participação.
 
-Quando o *streaming* começar, aparecerá logo abaixo.
+Assista abaixo a gravação do evento.

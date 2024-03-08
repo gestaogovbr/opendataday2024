@@ -1,6 +1,6 @@
 # Open Data Day 2024
 
-Na sexta-feira, 8 de março de 2024, será realizado o Open Data Day 2022
+Na sexta-feira, 8 de março de 2024, foi realizado o Open Data Day
 da Secretaria de Gestão e Inovação (SEGES) do Ministério da Gestão e da Inovação
 em Serviços Públicos (MGI).
 
@@ -20,7 +20,7 @@ em Serviços Públicos (MGI).
 | Felipe La Rocca Teixeira | Analista em Tecnologia da Informação | Transferegov.br e dados abertos |  |
 | Marcelo Bastos | Analista de Políticas Sociais | Oficina: Estudo de caso (Análise Exploratória de Dados - PCA/PGC) | 16: 10 [cadernos](https://colab.research.google.com/github/marcelo7bastos/dados_aberto_pgc_pca/blob/main/pgc_pca_itens_apresentacao.ipynb) (link p/ Google Colab) |
 | André Ruperto de Macêdo | Estagiário |  |  |
-| Augusto Herrmann |  | Oficina: uso de dados de estrutura organizacional | [cadernos](notebooks) |
+| Augusto Herrmann |  | Oficina de uso de dados: Compras.gov.br contratos e estrutura organizacional | [cadernos](notebooks) |
 
 Para ver como foi o ano anterior, veja o
 [site do evento de 2022](https://gestaogovbr.github.io/opendataday2022/).
@@ -38,18 +38,17 @@ Os conjuntos de dados publicados pela SEGES são os seguintes:
 * [Transferências e Parcerias da União](https://dados.gov.br/dados/conjuntos-dados/transferencias-e-parcerias-da-uniao)
 * [Viagens a Serviço do Governo Federal (SCDP)](https://dados.gov.br/dados/conjuntos-dados/viagens-a-servico-do-governo-federal-scdp)
 
-Para participar das oficinas, sugerimos preparar o seu ambiente de
-análise de dados e baixar os conjuntos de dados.
 
-Utilizaremos o ambiente do Jupyter Lab que está
-[neste repositório](https://github.com/augusto-herrmann/docker-jupyter-extensible).
-Posso usar outro? Claro que pode. Mas este já vem com os pacotes e
-dependências que vamos utilizar, tornando tudo mais fácil.
+## Laboratório e Oficinas
 
-**Obs.:** antes de fazer o build do contêiner Docker é necessário acrescentar
-o pacote `frictionless` no arquivo `Dockerfile`.
+Para as oficinas, foi usado o Jupyter Lab executando-o no próprio navegador web
+(a ferramenta que possibilita isso se chama
+[JupyterLite](https://jupyterlite.readthedocs.io/en/stable/)).
+
+Posso usar outro? Claro que pode. Mas este não precisa instalar nada e nem
+criar conta ou fazer login, tornando tudo mais fácil.
 
 ## Códigos
 
-Os códigos utilizados no evento estão na pasta
+Os códigos dos cadernos utilizados no evento estão na pasta
 [jupyterlite/notebooks](jupyterlite/notebooks).
