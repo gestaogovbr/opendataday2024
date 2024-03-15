@@ -10,7 +10,7 @@ plugins:
 theme: jekyll-theme-leap-day
 show_downloads: false
 video:
-  link_url: https://fediverse.tv/c/opendataday/videos?s=1
+  link_url: https://fediverse.tv/w/jcZa5ZxqFRfGK2BT5FxBrC
   link_name: ▶️ Assistir à gravação
 lab:
   link_url: notebooks
